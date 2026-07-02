@@ -17,6 +17,8 @@ jobs:
       AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
       MY_LAT: ${{ secrets.MY_LAT }}
       MY_LNG: ${{ secrets.MY_LNG }}
+      V_SIM: ${{ secrets.V_SIM }}
+      MY_SIM: ${{ secrets.MY_SIM }}
 
     steps:
       - name: Checkout repository
