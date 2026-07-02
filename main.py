@@ -51,4 +51,6 @@ else:
         from_=f"whatsapp:{os.getenv('V_SIM')}",
         to=f"whatsapp:{os.getenv('MY_SIM')}"
     )
+    print(message.sid)
+    print(message.status)
 
