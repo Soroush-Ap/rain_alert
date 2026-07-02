@@ -44,3 +44,11 @@ if will_rain:
     print(message.sid)
     print(message.status)
 
+else:
+    client = Client(account_sid, auth_token)
+    message = client.messages.create(
+        body="It's NOT going to rain today.",
+        from_=f"whatsapp:{os.getenv('V_SIM')}",
+        to=f"whatsapp:{os.getenv('MY_SIM')}"
+    )
+
